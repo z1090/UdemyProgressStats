@@ -1,0 +1,104 @@
+{{>head}}
+<div class="container main-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h1>Udemy Course Completion Stats</h1>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target="#instructions" aria-expanded="false" aria-controls="instructions">
+                Instructions
+                </button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <p>
+
+        </p>
+        <div class="collapse" id="instructions">
+        <div class="card card-body">
+            <ol>
+                <li>Go to the course information page (the one where you can buy the course).</li>
+                <li>Click 'Expand All' next to the Course Content subheading.</li>
+                <li>Bring up the Chrome Dev tools. Ctrl + Alt + i / Cmd + Alt + i.</li>
+                <li>Right-click on the html tag, second line from the top, and select Copy > Copy Element.</li>
+                <li>Fill in the form below and hit submit.</li>
+            </ol>
+        </div>
+        </div>
+    </div>
+    <form action="/" method="GET">
+        <div class="container">
+            <div class="row">
+                <div class="form-group col">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" class="form-control" id="startDate">
+                </div>
+                <div class="form-group col">
+                    <label for="progress">Last completed lecture</label>
+                    <input type="number" class="form-control" id="progress" placeholder="e.g. 123">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+    <hr>
+
+    <h3 id="courseTitle">The Complete Node.js Developer Course (3rd Edition)</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p><strong>Course Length:</strong> <span id="courseDurationSpan">34:31:32</span></p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Completed Time:</strong> <spanid="completedTimeSpan">21:42:28</spanid="completedTimeSpan"></p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Time Remaining:</strong> <span id="timeLeftSpan">12:49:04</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p><strong>Number of lectures:</strong> <span id="numOfLecturesSpan">177</span></p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Completed Lectures:</strong> <span id="completedLecturesSpan">109</span></p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Lectures Remaining:</strong> <span id="lecturesLeftSpan">68</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p><strong>Estimated Total Days:</strong> <span id="estTotalDaysSpan">66</span></p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Days Taken:</strong> <span id="daysTakenSpan">41</span></p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Days Remaining:</strong> <span id="daysLeftSpan">25</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p><strong>Start Date:</strong> <span id="startDateSpan">Tue Jul 16 2019</span></p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Estimated End Date:</strong> <span id="estEndDateSpan">Fri Sep 20 2019</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p><strong>Percentage Complete (Time):</strong> <span id="percentCompleteTimeSpan">62.87%</span></p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Percentage Complete (Lectures):</strong> <span id="percentCompleteLecturesSpan">61.58%</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/index.js"></script>
+{{>foot}}

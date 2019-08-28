@@ -1,0 +1,107 @@
+{{>head}}
+<div class="container main-wrapper">
+    <div class="container">
+        <div class="row">
+            <h1>Udemy Course Progress Stats</h1>
+        </div>
+    </div>
+    <div class="intro-div">
+        <p class="intro">Want to know more about your progress than the basic stats offered on Udemy? Try this webpage!</p>
+        <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target="#instructions" aria-expanded="false" aria-controls="instructions">
+            Instructions
+        </button>
+    </div>
+    <div class="container">
+        <div class="collapse" id="instructions">
+        <div class="card card-body instructions">
+            <ol>
+                <li>Go to the course information page on <a href="https://www.udemy.com/" target="blank">udemy.com</a> (the one where you can buy the course)</li>
+                <li>Click the 'Expand All' link next to the Course Content subheading. (Skipping this step won't grab all the lectures!)</li>
+                <li>Open up your browser's Dev Tools (Chrome Dev tools: Ctrl + Alt + i / Cmd + Alt + i).</li>
+                <li>Copy all the HTML. To do this in Chrome, right-click on the html tag – second line from the top – and select Copy > Copy Element.</li>
+                <li>Fill in the form below and hit submit.</li>
+            </ol>
+        </div>
+        </div>
+    </div>
+    <hr class="hr1">
+    <form action="/" method="GET">
+        <div class="container">
+            <div class="row">
+                <div class="form-group col">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" class="form-control" id="startDate">
+                    <div class="small-containers">
+                        <small class="invalid-date" id="invalidDate" class="form-text text-muted">.</small>
+                        <small class="invalid-webpage" id="invalidWebpage" class="form-text text-muted">.</small>
+                    </div>
+                </div>
+                <div class="form-group col">
+                    <label for="progress">Last completed lecture</label>
+                    <input type="number" class="form-control" id="progress" placeholder="e.g. 123">
+                    <small class="invalid-progress" id="invalidProgress" class="form-text text-muted">.</small>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+    <hr>
+
+    <div class="container stats-container">
+        <h3 id="courseTitleSpan"></h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p><strong>Course Length:</strong> <span id="courseLengthSpan"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Completed Time:</strong> <span id="completedTimeSpan"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Time Remaining:</strong> <span id="timeLeftSpan"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p><strong>Number of lectures:</strong> <span id="numOfLecturesSpan"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Completed Lectures:</strong> <span id="completedLecturesSpan"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Lectures Remaining:</strong> <span id="lecturesLeftSpan"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p><strong>Estimated Total Days:</strong> <span id="estTotalDaysSpan"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Days Taken:</strong> <span id="daysTakenSpan"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Days Remaining:</strong> <span id="daysLeftSpan"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p><strong>Start Date:</strong> <span id="startDateSpan"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Estimated End Date:</strong> <span id="estEndDateSpan"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p><strong>Percentage Complete (Time):</strong> <span id="percentCompleteTimeSpan"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Percentage Complete (Lectures):</strong> <span id="percentCompleteLecturesSpan"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/index.js"></script>
+{{>foot}}

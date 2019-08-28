@@ -1,0 +1,91 @@
+body {
+    background-color: #EEE;
+}
+
+.main-wrapper {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem #DDD;
+}
+
+h1, h3 {
+    display: inline-block;
+    color: #444;
+    font-weight: 200;
+}
+
+h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro-div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.intro {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+/* .instructions {
+    /* padding-bottom: 0.5rem; */
+    /* margin-bottom: 1.5rem; */
+/* } */
+
+ol {
+    margin-bottom: 0;
+}
+
+.hr1 {
+    margin-top: 2rem;
+}
+
+small {
+    color: #08F;
+}
+
+.small-containers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-container {
+    visibility: hidden;
+    display: none;
+}
+.stats-container-visible {
+    visibility: visible;
+}
+
+.stats-container-displayed {
+    display: block;
+}
+
+.invalid-date {
+    display: none;
+}
+
+.invalid-date-display {
+    display: block;
+}
+
+.invalid-progress {
+    display: none;
+}
+
+.invalid-progress-display {
+    display: block;
+}
+
+.invalid-webpage {
+    display: none;
+}
+
+.invalid-webpage-display {
+    display: block;
+}
